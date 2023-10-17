@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Videos Juegos</title>
+    <title>Grupo 16 - Los Sin Nombre</title>
 		   
 	<!-- Enlazar el archivo CSS externo en el head -->	
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -26,50 +26,46 @@
 	</script>
 		
 </head>
-<body>
+<body style="background-color: #424949">
+	<a class="open-popup-button" onclick="openPopup()">Contacto <object data="imagenes/envelope-solid.svg" width="20" height="20"> </object></a>
+	<!-- <div class="boton-flotante"> -->
+		<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
+	<!-- </div> -->
+	
     <header>
-        <h1>Bienvenido a nuestra página de Videojuegos</h1>
+        <h1>Grupo 16 - Los Sin Nombre</h1>
 		
 		 <!-- Barra de menú -->
-		<nav>
-			<a href="novedades.html">Noticias</a>
-			<a href="#seccion2">Asistencia</a>
-			<a href="#seccion3">Tienda</a>
-			<a href="#seccion4">Registro</a>
-			<a class="open-popup-button" onclick="openPopup()">Contacto</a>
-		</nav>
+		<!-- <nav> -->
+			<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
+		<!-- </nav> -->
     </header>
 		
-    <section>
-		<div align="center">
-			<h2>NOVEDADES</h2>
-			<p>Nos hemos agrandado como equipo, ¡ya que contamos con más de 1000 juegos nuevos!.</p>
-		</div>        
+	<section>
+      <article>
+		<a>
+			<h2>Inicio</h2>
+			<!-- <a href="novedades.html"><p>Ingresa para saber más a fondo de qué se trata nuestra página.</p></a> -->
+			<p>Ingresa para saber más a fondo de qué se trata nuestra página.</p> 		
+		</a>		    
+      </article>
+
+      <article>
+		  <a href="novedades.html">
+			<h2>Novedades</h2>
+
+			<p>Acá encontrarás las últimas novedades en videos Juegos.</p>
+		  </a>
+      </article>
+
+      <article>
+        <h2>Quienes Somos?</h2>
+
+        <p>Ingresá para ver nuestro equipo</p>
+      </article>
+
     </section>
 
-    <section>
-		<a name="seccion1"></a>
-        <h2>Noticias</h2>
-        <p>Últimas actualizaciones en el mundo de consolas y contenidos Gaming. Redes Sociales</p>
-    </section>
-
-    <section>
-		<a name="seccion2"></a>
-        <h2>Asistencia</h2>
-        <p>Soporte técnico aviso sobre juegos que se van a descontinuar, reclamos (Formulario).</p>
-    </section>
-
-    <section>
-		<a name="seccion3"></a>
-        <h2>Tienda</h2>
-        <p>Colecciones, acceso anticipado con cuenta plus, nuevos lanzamientos, proximamente, demos.</p>
-    </section>
-
-    <section>
-		<a name="seccion4"></a>
-        <h2>Registro</h2>
-        <p>Promoción descripción de beneficios, planes de registro.</p>
-    </section>
 
     <!-- Formulario popup -->
     <div class="overlay" id="overlay"></div>
