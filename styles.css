@@ -1,35 +1,85 @@
- <style>
- 
-	<!-- Estilos generales de la página -->
-	body {
-		font-family: Arial, sans-serif;
-		background-color: black; 
-		margin: 0;
-		padding: 0;
+/*Estilos generales de la página*/ 
+body {
+	font-family: Arial, sans-serif;
+	background-color: black; 
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	/* background-color: #2ecc71;*/ 
+	background-color: black;
+	padding: 20px;
+	text-align: center;
+	color: white;
+	font-family: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+footer {
+	/* background-color: #34495e;  */
+	background-color: black;  
+	padding: 20px;
+	text-align: center;
+	color: white;
+	font-family: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+	
+/*<!-- FIN - Estilos generales de la página -->*/
+	
+	
+/*<!-- Estilo para formulario PopUp -->*/
+/* Estilos para el overlay de fondo */
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+	z-index: 1;
+}
+	
+/* Estilos para el popup */
+@media (max-width: 768px) {
+	/* Estilos para el overlay de fondo */
+	.overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+		z-index: 1;
+	}
+	.popup {
+		display: none;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		/*transform: translate(-50%, -50%);*/
+		width: 90%;
+		height: 90%;
+		background-color: #333;
+		padding: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		z-index: 2;
+		border-radius: 5px;
+		color: white;
+		align-items: center;
+		align-content: center;
+		text-align: center;
 	}
 
-	header {
-		/* background-color: #2ecc71; /* Color de fondo verde */ 
-		background-color: black;
-		padding: 20px;
+	/* Estilos para el formulario dentro del popup */
+	.popup form {
 		text-align: center;
-		color: white;
-		font-family: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		width: 90%
 	}
+}
 
-	footer {
-		/* background-color: #34495e;  */
-		background-color: black;  
-		padding: 20px;
-		text-align: center;
-		color: white;
-		font-family: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	}
-	
-	<!-- FIN - Estilos generales de la página -->
-	
-	
-	<!-- Estilo para formulario PopUp -->
+@media (min-width: 769px) {
 	/* Estilos para el overlay de fondo */
 	.overlay {
 		display: none;
@@ -41,139 +91,120 @@
 		background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
 		z-index: 1;
 	}
-
-	/* ---- Estilos para el popup ---- */	
-	
-	/* Estilos para el overlay de fondo */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            z-index: 1;
-        }
-
-        /* Estilos para el popup */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #333; /* Verde oscuro */
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            z-index: 2;
-            border-radius: 5px;
-			color: white;
-        }
-
-        /* Estilos para el formulario dentro del popup */
-        .popup form {
-            text-align: center;
-			width: 90%
-        }
-
-        /* Estilos para el botón que abre el popup */
-        .open-popup-button {
-            cursor: pointer;
-            background-color: #B03A2E; 
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;			
-			position: fixed;
-			bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
-			right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
-			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-			text-align: center;
-        }
-		
-		
-		.open-popup-button:hover {
-			background-color: #641E16; /* Cambio de color al pasar el mouse por encima */
-		  }
-	  
-
-        /* Estilos para el botón de cierre del popup */
-        .close-popup-button {
-            cursor: pointer;
-            background-color: #e74c3c; /* Rojo */
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-        /* Estilos para los campos del formulario */
-        .popup input[type="text"],
-        .popup input[type="email"],
-        .popup textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #2ecc71; /* Borde verde claro */
-            border-radius: 5px;
-        }
-
-        /* Estilos para el botón de envío */
-        .popup input[type="submit"] {
-            background-color: #2ecc71; /* Verde claro */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-	<!-- ---- FIN - Estilo para formulario PopUp ---- -->
-	
-	
-	section {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-		align-content: stretch;
-		background-color: red;		
-	}
-	  
-	article {
-		
-		text-align: center;
-		width: 90%;
-        padding: 10px;
-        margin: 10px;
-        background-color: #333;	
-		transition: transform 0.3s;
-		margin-left: 5%;
+	.popup {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #333;
+		padding: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		z-index: 2;
+		border-radius: 5px;
 		color: white;
-		font-family: Verdana;
-	    font-size: 15px;
-    }
+	}
+	/* Estilos para el formulario dentro del popup */
+	.popup form {
+		text-align: center;
+		width: 90%
+	}
+}
+
+/* Estilos para el botón que abre el popup */
+.open-popup-button {
+    cursor: pointer;
+    background-color: #B03A2E; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;			
+	position: fixed;
+	bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+	right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+	text-align: center;
+}
+				
+.open-popup-button:hover {
+	background-color: #641E16; /* Cambio de color al pasar el mouse por encima */
+}	  
+
+/* Estilos para el botón de cierre del popup */
+.close-popup-button {
+    cursor: pointer;
+    background-color: #e74c3c; /* Rojo */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Estilos para los campos del formulario */
+.popup input[type="text"],
+.popup input[type="email"],
+.popup textarea {
+	width: 100%;
+	padding: 10px;
+	/*margin: 5px 0;*/
+	margin-left: 2.5%;
+	border: 1px solid #2ecc71; 
+	border-radius: 5px;
+}
+
+/* Estilos para el botón de envío */
+.popup input[type="submit"] {
+    background-color: #2ecc71; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
 	
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	background-color: red;		
+	background-color: #424949;
+}
+	  
+article {		
+	text-align: center;
+	width: 90%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;	
+	transition: transform 0.3s;
+	margin-left: 5%;
+	color: white;
+	font-family: Verdana;
+	font-size: 15px;
+}
+
+@media (min-width: 769px) {
 	article:hover {
 		transform: scale(1.05); /* Escala el elemento en un 10% más grande cuando pasas el mouse sobre él */
 	}
-	  
-	
-	a {
-		text-decoration: none; /* Quita el subrayado */
-		color: inherit; /* Mantiene el color del texto heredado */
-	  }
+}
 
-	/* Estilos cuando pasas el mouse por encima del enlace */
-	a:hover {
-		mouse: none;
-		text-decoration: none; /* Puedes agregar un subrayado cuando se pasa el mouse por encima (opcional) */
-		color: inherit; /* Cambia el color del texto al pasar el mouse por encima (puedes usar el color que desees) */
-	}
+a {
+	text-decoration: none; /* Quita el subrayado */
+	color: inherit; /* Mantiene el color del texto heredado */
+}
+
+/* Estilos cuando pasas el mouse por encima del enlace */
+a:hover {
+	cursor: pointer;
+	text-decoration: none; /* Puedes agregar un subrayado cuando se pasa el mouse por encima (opcional) */
+	color: inherit; /* Cambia el color del texto al pasar el mouse por encima (puedes usar el color que desees) */
+}
 	     
-	
-</style>
