@@ -29,64 +29,84 @@
 <body style="background-color: #424949">
 	<a class="open-popup-button" onclick="openPopup()">Contacto <object data="imagenes/envelope-solid.svg" width="20" height="20"> </object></a>
 	<!-- <div class="boton-flotante"> -->
-		<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
+	<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
 	<!-- </div> -->
-	
-    <header>
-        <h1>Grupo 16 - Los Sin Nombre</h1>
-		
-		 <!-- Barra de menú -->
+
+	<header>
+		<h1>Grupo 16 - Los Sin Nombre</h1>
+
+		<!-- Barra de menú -->
 		<!-- <nav> -->
-			<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
+		<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
 		<!-- </nav> -->
-    </header>
-		
+	</header>
+
 	<section>
-      <article>
-		<a>
-			<h2>Inicio</h2>
-			<!-- <a href="novedades.html"><p>Ingresa para saber más a fondo de qué se trata nuestra página.</p></a> -->
-			<p>Ingresa para saber más a fondo de qué se trata nuestra página.</p> 		
-		</a>		    
-      </article>
+		<article>
+			<a>
+				<h2>Inicio</h2>
+				<!-- <a href="novedades.html"><p>Ingresa para saber más a fondo de qué se trata nuestra página.</p></a> -->
+				<p>Ingresa para saber más a fondo de qué se trata nuestra página.</p>
+			</a>
+		</article>
 
-      <article>
-		  <a href="novedades.html">
-			<h2>Novedades</h2>
+		<article>
+			<a href="novedades.html">
+				<h2>Novedades</h2>
 
-			<p>Acá encontrarás las últimas novedades en videos Juegos.</p>
-		  </a>
-      </article>
+				<p>Acá encontrarás las últimas novedades en videos Juegos.</p>
+			</a>
+		</article>
 
-      <article>
-		<a href="Quienes_Somos.html">
-			<h2>Quienes Somos?</h2>
+		<article>
+			<a href="Quienes_Somos.html">
+				<h2>Quienes Somos?</h2>
 
-			<p>Ingresá para ver nuestro equipo</p>
-		</a>
-      </article>
+				<p>Ingresá para ver nuestro equipo</p>
+			</a>
+		</article>
 
-    </section>
+	</section>
 
 
-    <!-- Formulario popup -->
-    <div class="overlay" id="overlay"></div>
-    <div class="popup" id="popup">
-        <button class="close-popup-button" onclick="closePopup()">X</button>
-        <h2>Formulario de Contacto</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-	
-    <footer>
-        <p>Derechos de autor © 2023 - Grupo 16 - Los Sin Nombre</p>
-    </footer>
+	<!-- Formulario popup -->
+	<div class="overlay" id="overlay"></div>
+	<div class="popup" id="popup">
+		<button class="close-popup-button" onclick="closePopup()">X</button>
+		<h2>Formulario de Contacto</h2>
+		<!--<form action="#" method="post">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="mensaje">Mensaje:</label><br>
+			<textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+			<input type="submit" value="Enviar">
+		</form>-->
+
+		<form action="https://formspree.io/f/mleyayon" method="POST">
+			<label>
+				Nombre:
+				<input type="text" name="nombre" required>
+			</label>
+
+			<label>
+				Mail:
+				<input type="email" name="email" required>
+			</label>
+			<label>
+				Mensaje:
+				<textarea name="message" required></textarea>
+			</label>
+			<!-- your other form fields go here -->
+			<button class="button-enviar"  type="submit">Enviar</button>
+		</form>
+
+	</div>
+
+
+	<footer>
+		<p>Derechos de autor © 2023 - Grupo 16 - Los Sin Nombre</p>
+	</footer>
 </body>
 </html>

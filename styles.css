@@ -103,6 +103,9 @@ footer {
 		z-index: 2;
 		border-radius: 5px;
 		color: white;
+		align-items: center;
+		align-content: center;
+		text-align: center;
 	}
 	/* Estilos para el formulario dentro del popup */
 	.popup form {
@@ -184,7 +187,7 @@ article {
     margin: 10px;
     background-color: #333;	
 	transition: transform 0.3s;
-	margin-left: 5%;
+	/*margin-left: 5%;*/
 	color: white;
 	font-family: Verdana;
 	font-size: 15px;
@@ -207,4 +210,22 @@ a:hover {
 	text-decoration: none; /* Puedes agregar un subrayado cuando se pasa el mouse por encima (opcional) */
 	color: inherit; /* Cambia el color del texto al pasar el mouse por encima (puedes usar el color que desees) */
 }
-	     
+
+
+/* Estilos para el botón que envia mail */
+.button-enviar {
+	cursor: pointer;
+	background-color: #B03A2E;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+	right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+	text-align: center;
+}
+
+.button-enviar:hover {
+	background-color: #641E16; /* Cambio de color al pasar el mouse por encima */
+}	  
