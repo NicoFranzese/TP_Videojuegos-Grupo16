@@ -1,0 +1,88 @@
+ <style>
+ 
+	<!-- Estilos generales de la página -->
+	body {
+		font-family: Arial, sans-serif;
+		background-color: black; 
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
+		/* background-color: #2ecc71; /* Color de fondo verde */ 
+		background-color: black;
+		padding: 20px;
+		text-align: center;
+		color: white;
+		font-family: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	}
+
+	footer {
+		/* background-color: #34495e;  */
+		background-color: black;  
+		padding: 20px;
+		text-align: center;
+		color: white;
+		font-family: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	}
+	
+	<!-- FIN - Estilos generales de la página -->
+	
+	section {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+	  
+	article {		
+		text-align: center;
+		/* width: 30%;  */
+        padding: 10px; 
+        margin: 10px; 
+        background-color: #333;	
+		transition: transform 0.3s;
+		/* margin-left: 5%;  */
+		color: white;
+		font-family: Verdana;
+	    font-size: 15px;
+    }
+	
+	article {
+	  flex: 1 200px;
+	}
+
+	article:nth-of-type(2) {
+	  flex: 2 200px;
+	}
+	
+	article:nth-of-type(3) {
+	  flex: 3 200px;
+	}
+
+	 article:hover { 
+		 transform: scale(1.05); 
+	 } 
+	  
+	
+	a {
+		text-decoration: none; /* Quita el subrayado */
+		color: inherit; /* Mantiene el color del texto heredado */
+	  }
+
+	/* Estilos cuando pasas el mouse por encima del enlace */
+	a:hover {
+		cursor: pointer;
+		text-decoration: none; /* Puedes agregar un subrayado cuando se pasa el mouse por encima (opcional) */
+		color: inherit; /* Cambia el color del texto al pasar el mouse por encima (puedes usar el color que desees) */
+	}
+	
+	img {
+		width: 200px; /* Establece el ancho de la imagen según tus preferencias */
+		height: 200px; /* Establece la altura de la imagen según tus preferencias */
+		border-radius: 50%; /* Hace que la imagen tenga bordes redondeados y sea un círculo */
+	  }     
+	
+</style>

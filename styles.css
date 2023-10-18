@@ -28,26 +28,6 @@
 	
 	<!-- FIN - Estilos generales de la página -->
 	
-	<!-- Estilo para menú -->
-	nav {
-		background-color: #2ecc71;
-		padding: 10px;
-		text-align: center;
-		color: white;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-		align-items: center;
-		align-content: stretch;
-	}
-
-	nav a {
-		color: #fff; /* Texto en blanco */
-		text-decoration: none;
-		margin: 10px;
-		transition: color 0.3s ease; /* Transición de color suave */
-	}
-
-	
-	<!-- FIN - Estilo para menú -->
 	
 	<!-- Estilo para formulario PopUp -->
 	/* Estilos para el overlay de fondo */
