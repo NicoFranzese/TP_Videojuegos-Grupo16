@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">	
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
-    <title>¿Quienes Somos?</title>
-    <link rel="stylesheet" href="style-quienes_somos.css">
-    <!-- <link rel="script" href="script-novedades.js"> -->
-    <!-- <script src="https://kit.fontawesome.com/97e105b343.js" crossorigin="anonymous"></script> -->
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>¿Quienes Somos?</title>
+	<link rel="stylesheet" href="style-quienes_somos.css">
+
 	<script>
-		function irAInicio(){
+		function irAInicio() {
 			window.location.href = "index.html";
 		}
-		
-		function irAGitNico(){
+
+		function irANovedades() {
+			window.location.href = "Novedades.html";
+        }
+
+		function irASobreProducto() {
+            window.location.href = "Sobre_Producto.html";
+        }
+
+		function irAGitNico() {
 			window.open("https://github.com/NicoFranzese", "_blank");
-			
+
 		}
-		
-		function irAGitMiguel(){
-			window.open("https://github.com/Miguexbalmaceda", "_blank");			
+
+		function irAGitMiguel() {
+			window.open("https://github.com/Miguexbalmaceda", "_blank");
 		}
-		
-		function irAGitMariana(){
-			window.open("https://github.com/Mariana2807", "_blank");			
+
+		function irAGitMariana() {
+			window.open("https://github.com/Mariana2807", "_blank");
 		}
 	</script>
-
 </head>
-<body style="background-color: #424949">
-	<button style="width: 100%; background-color: #333; color: white; font-family: Verdana; font-size: 13px; height: 30px;" onclick="irAInicio()"> Inicio </button>
+
+
+<body style="background-color: #424949;">
+	<div style="text-align: center">
+		<button style="width: 30%; background-color: #333; color: white; font-family: Verdana; font-size: 13px; height: 30px;" onclick="irAInicio()"> Inicio </button>
+		<button style="width: 30%; background-color: #333; color: white; font-family: Verdana; font-size: 13px; height: 30px;" onclick="irASobreProducto()"> Sobre nuestro Producto </button>
+		<button style="width: 30%; background-color: #333; color: white; font-family: Verdana; font-size: 13px; height: 30px;" onclick="irANovedades()"> Novedades </button>
+	</div>
 
 	<header>
 		<h1>¿QUIENES SOMOS?</h1>
@@ -52,12 +63,12 @@
 			</button>
 		</article>
 
-		<article>
+		<!--<article>
 			<button style="width: 100%; background-color: #333; color: white; font-family: Verdana; font-size: 13px;" onclick="irAGitMariana()">
 				<h2>Mariana García</h2>
 				<img src="Imagenes/Mariana.jpeg"></img>
 			</button>
-		</article>
+		</article>-->
 
 	</section>
 
