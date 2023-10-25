@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>�Sobre Nuestro Producto?</title>
     <link rel="stylesheet" href="style-sobre_producto.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <script>
-      function irAInicio() {
-        window.location.href = "index.html";
-      }
 
-      function irANovedades() {
-        window.location.href = "Novedades.html";
-      }
 
-      function irAQuienesSomos() {
-        window.location.href = "Quienes_Somos.html";
-      }
+        function irAInicio() {
+            window.location.href = "index.html";
+        }
+
+        function irANovedades() {
+            window.location.href = "Novedades.html";
+        }
+
+        function irAQuienesSomos() {
+            window.location.href = "Quienes_Somos.html";
+        }
+
+
     </script>
-  </head>
+</head>
 
-  <body style="background-color: #424949">
+<body style="background-color: #424949">
     <div style="text-align: center">
-      <button
-        style="
+        <button style="
           width: 30%;
           background-color: #333;
           color: white;
@@ -32,12 +36,10 @@
           font-size: 13px;
           height: 30px;
         "
-        onclick="irAInicio()"
-      >
-        Inicio
-      </button>
-      <button
-        style="
+                onclick="irAInicio()">
+            Inicio
+        </button>
+        <button style="
           width: 30%;
           background-color: #333;
           color: white;
@@ -45,12 +47,10 @@
           font-size: 13px;
           height: 30px;
         "
-        onclick="irANovedades()"
-      >
-        Novedades
-      </button>
-      <button
-        style="
+                onclick="irANovedades()">
+            Novedades
+        </button>
+        <button style="
           width: 30%;
           background-color: #333;
           color: white;
@@ -58,81 +58,71 @@
           font-size: 13px;
           height: 30px;
         "
-        onclick="irAQuienesSomos()"
-      >
-        �Quienes Somos ?
-      </button>
+                onclick="irAQuienesSomos()">
+            ¿ Quienes Somos ?
+        </button>
     </div>
 
     <header>
-      <h1>Sobre Nuestro Producto</h1>
+        <h1>Sobre Nuestro Producto</h1>
     </header>
 
     <section>
-      <div class="caja1">
-        <div class="texto1">
-          <h1>¿PORQUE ELEGIRNOS?</h1>
-          <p>
-            Deberían elegir nuestra página de videojuegos debido a su amplia
-            selección de juegos, características únicas y una experiencia de
-            usuario excepcional. Con años de experiencia, somos una página de
-            videojuegos de confianza que se dedica a brindar a nuestros usuarios
-            la información más precisa y actualizada. Nuestro compromiso con la
-            excelencia en la información y el contenido de calidad nos distingue
-            como un recurso serio en la industria de los videojuegos.
-          </p>
+        <div class="caja1">
+            <div class="texto1" style="text-align: center">
+                <h1>¿PORQUE ELEGIRNOS?</h1>
+                <p>
+                    Deberían elegir nuestra página de videojuegos debido a su amplia
+                    selección de juegos, características únicas y una experiencia de
+                    usuario excepcional. Con años de experiencia, somos una página de
+                    videojuegos de confianza que se dedica a brindar a nuestros usuarios
+                    la información más precisa y actualizada. Nuestro compromiso con la
+                    excelencia en la información y el contenido de calidad nos distingue
+                    como un recurso serio en la industria de los videojuegos.
+                </p>
+            </div>
         </div>
-      </div>
-
-      
 
 
+        <div class="caja2">
+            <div class="texto1" style="text-align: center">
+                <h1>NUESTROS PLANES</h1>
+                <p>
+                    Descubre nuestros planes "Gratis, Normal y Deluxe": Ofrecemos una
+                    variedad de planes para adaptarnos a tus preferencias. Tanto si
+                    eliges nuestro plan gratuito, el plan normal o el plan deluxe, te
+                    aseguramos experiencias únicas y emocionantes. Cada plan incluye
+                    promociones imperdibles, descuentos exclusivos y acceso anticipado a
+                    juegos que te mantendrán siempre entretenido. ¡Explora las ventajas
+                    de cada uno y elige el que mejor se adapte a tu estilo de juego!
+                </p>
+            </div>
 
-
-      <div class="caja2">
-        <div class="texto1">
-          <p>
-            Descubre nuestros planes "Gratis, Normal y Deluxe": Ofrecemos una
-            variedad de planes para adaptarnos a tus preferencias. Tanto si
-            eliges nuestro plan gratuito, el plan normal o el plan deluxe, te
-            aseguramos experiencias únicas y emocionantes. Cada plan incluye
-            promociones imperdibles, descuentos exclusivos y acceso anticipado a
-            juegos que te mantendrán siempre entretenido. ¡Explora las ventajas
-            de cada uno y elige el que mejor se adapte a tu estilo de juego!
-          </p>
+            <div class="carousel">
+                <div class="slide current">
+                    <img src="Imagenes/Plan-gratuito.png" alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes/Plan-basico.png" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes/Plan-vip.png" alt="Imagen 3">
+                </div>
+            </div>
+            <button id="prev">Anterior</button>
+            <button id="next">Siguiente</button>
         </div>
-      </div>
 
-
-<!--
-<div class="carrusel">
-    <div class="grande">
-        <img src="#" alt="Imagen1" class="img">
-        <img src="#" alt="Imagen2" class="img">
-        <img src="#" alt="Imagen3" class="img">
-        <img src="#" alt="Imagen4" class="img">
-    </div>
-
-    <ul class="puntos">
-        <li class="punto activo"></li>
-        <li class="punto"></li>
-    </ul>
-
-    <script src="script-sobre_producto.js"></script>
-</div>
-
--->
-
-
-
+       
+        
+        <script src="script-sobre_producto.js"></script>
 
     </section>
 
+    <footer>
+        <p>Derechos de autor � 2023 - Grupo 16 - Los Sin Nombre</p>
+    </footer>
 
-  </body>
-
-  <footer>
-    <p>Derechos de autor � 2023 - Grupo 16 - Los Sin Nombre</p>
-</footer>
+</body>
 
 </html>

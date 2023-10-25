@@ -49,7 +49,7 @@ header {
 
 .caja1 {
     background-color: rgb(27, 27, 36);
-    width: 100%;
+    width: 95%;
     height: 20%;
     display: flex; /*Organiza todo*/
     justify-content: space-around;
@@ -63,7 +63,7 @@ header {
 
 .caja2 {
     background-color: rgb(27, 27, 36);
-    width: 100%;
+    width: 95%;
     height: 20%;
     display: flexbox; /*Organiza todo*/
     justify-content: space-around;
@@ -97,6 +97,41 @@ header {
     font-family: Verdana;
     padding: 8px;
     line-height: 2;
+}
+
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transition: transform 0.3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#prev, #next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#prev {
+    float: left;
+}
+
+#next {
+    float: right;
 }
 
 
@@ -152,4 +187,4 @@ header {
 
 .carrusel .punto.activo {
     background-color: rgb(255, 230, 0);
-}
+}*/
