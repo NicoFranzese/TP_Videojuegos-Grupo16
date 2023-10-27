@@ -51,18 +51,14 @@ nextButton.addEventListener('click', () => {
 
 showSlide(currentIndex);
 
-/*const grande = document.querySelector('.grande')
-const punto = document.querySelectorAll('.grande')
+function irAInicio() {
+    window.location.href = "index.html";
+}
 
-punto.forEach( ( cadaPunto , i )=> {
-    punto[i].addEventListener('click' ,()=>{
+function irANovedades() {
+    window.location.href = "Novedades.html";
+}
 
-        let posicion = i
-        let operation = posicion * -50
-
-        grande.style.transform = 'translateX(${ operacion }%)'
-
-    })
-
-
-})*/
+function irAQuienesSomos() {
+    window.location.href = "Quienes_Somos.html";
+}

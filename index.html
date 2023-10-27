@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo 16 - Los Sin Nombre</title>
-		   
-	<!-- Enlazar el archivo CSS externo en el head -->	
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	
-	<!-- Enlazar el archivo JavaScript externo en el head -->
-    <!-- <script src="javaScript.js"></script> -->
-	
-	<script>
-		// Función para abrir el popup
-		function openPopup() {
-			document.getElementById("overlay").style.display = "block";
-			document.getElementById("popup").style.display = "block";
-		}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grupo 16 - Los Sin Nombre</title>
 
-		// Función para cerrar el popup
-		function closePopup() {
-			document.getElementById("overlay").style.display = "none";
-			document.getElementById("popup").style.display = "none";
-		}
-	</script>
-		
+	<!-- Enlazar el archivo CSS externo en el head -->
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="icon" type="image/x-icon" href="Imagenes/favicon.png">
+
 </head>
 <body style="background-color: #424949">
+
+	<script src="JS/script-index.js"></script>
+
 	<a class="open-popup-button" onclick="openPopup()">Contacto <object data="imagenes/envelope-solid.svg" width="20" height="20"> </object></a>
 	<!-- <div class="boton-flotante"> -->
 	<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
@@ -65,7 +52,6 @@
 				<p>Ingresá para ver nuestro equipo</p>
 			</a>
 		</article>
-
 	</section>
 
 
@@ -99,11 +85,10 @@
 				<textarea name="message" required></textarea>
 			</label>
 			<!-- your other form fields go here -->
-			<button class="button-enviar"  type="submit">Enviar</button>
+			<button class="button-enviar" type="submit">Enviar</button>
 		</form>
 
 	</div>
-
 
 	<footer>
 		<p>Derechos de autor © 2023 - Grupo 16 - Los Sin Nombre</p>
