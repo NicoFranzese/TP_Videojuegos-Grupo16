@@ -49,20 +49,16 @@ article {
 }
 
 article {
-	flex: 1 30%;
+	flex: 1 40%;
 }
 
-	article:nth-of-type(2) {
-		flex: 2 30%;
-	}
+article:nth-of-type(2) {
+	flex: 2 40%;
+}
 	
-article:nth-of-type(3) {
-	flex: 3 30%;
-}
-
-	article:hover { 
-		transform: scale(1.05); 
-	} 
+article:hover { 
+	transform: scale(1.05); 
+} 
 	  
 	
 a {
