@@ -12,8 +12,6 @@
 </head>
 <body style="background-color: #424949">
 
-	<script src="JS/script-index.js"></script>
-
 	<a class="open-popup-button" onclick="openPopup()">Contacto <object data="imagenes/envelope-solid.svg" width="20" height="20"> </object></a>
 	<!-- <div class="boton-flotante"> -->
 	<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
@@ -70,19 +68,19 @@
 			<input type="submit" value="Enviar">
 		</form>-->
 
-		<form action="https://formspree.io/f/mleyayon" method="POST">
+		<form id="miFormulario" action="https://formspree.io/f/mleyayon" method="POST">
 			<label>
 				Nombre:
-				<input type="text" name="nombre" required>
+				<input type="text" id="nombre" name="nombre">
 			</label>
 
 			<label>
 				Mail:
-				<input type="email" name="email" required>
+				<input type="text" id="email" name="email">
 			</label>
 			<label>
 				Mensaje:
-				<textarea name="message" required></textarea>
+				<textarea id="mensaje" name="mensaje"></textarea>
 			</label>
 			<!-- your other form fields go here -->
 			<button class="button-enviar" type="submit">Enviar</button>
@@ -93,5 +91,7 @@
 	<footer>
 		<p>Derechos de autor © 2023 - Grupo 16 - Los Sin Nombre</p>
 	</footer>
+
+	<script src="JS/script-index.js"></script>
 </body>
 </html>
