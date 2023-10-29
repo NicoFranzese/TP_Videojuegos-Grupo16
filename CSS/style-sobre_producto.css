@@ -1,3 +1,9 @@
+/*Importo fuente de google fonts que tenemos en un archivo .ttf dentro de nuestro proyecto*/
+@font-face {
+    font-family: 'DMSSans';
+    src: url('../Fonts/DMSans-Italic.ttf') format('truetype');
+}
+
 /*<!-- Estilos generales de la p�gina -->*/
 body {
     font-family: Arial, sans-serif;
@@ -36,13 +42,13 @@ a:hover {
 
 
 header {
-    height:300px;
+    height: 300px;
     background-image: url(https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/wallpaper_god_of_war_2017_01_1920x1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     padding-top: 150px;
-    font-family: Verdana;
+    font-family: DMSSans;
     color: white;
     font-size: 25px;
 }
@@ -82,7 +88,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    font-family: Verdana;
+    font-family: DMSSans;
     padding: 8px;
     line-height: 2;
 }
@@ -94,7 +100,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    font-family: Verdana;
+    font-family: DMSSans;
     padding: 8px;
     line-height: 2;
 }
@@ -134,57 +140,3 @@ img {
     float: right;
 }
 
-
-/*Intento de carrusel
-
-
-.carrusel {
-    width: 90%;
-    max-width: 120em;
-    background-color: red;
-    margin: 1em;
-}
-
-.carrusel .grande {
-    width: 200%;
-    background-color: green;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1em;
-
-    transition: all 0.5s ease ;
-    transform: translateX(0%);
-}
-
-.carrusel .img {
-    width: 100% / 2;
-    background-color: rgb(179, 255, 0);
-    margin: 1em;
-}
-
-.carrusel .puntos {
-    width: 100%;
-    background-color: rgb(0, 255, 55);
-    padding: 1em;
-    margin: 1em;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrusel .punto {
-    width: 1em;
-    height: 1em;
-    background-color: rgb(0, 110, 92);
-    margin: 1em;
-    
-}
-
-.carrusel .punto.activo {
-    background-color: rgb(255, 230, 0);
-}*/

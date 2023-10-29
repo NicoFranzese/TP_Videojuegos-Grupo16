@@ -1,9 +1,16 @@
+/*Importo fuente de google fonts que tenemos en un archivo .ttf dentro de nuestro proyecto*/
+@font-face {
+	font-family: 'DMSSans';
+	src: url('../Fonts/DMSans-Italic.ttf') format('truetype');
+}
+
 /*<!-- Estilos generales de la página -->*/
 body {
 	font-family: Arial, sans-serif;
-	background-color: black; 
+	background-color: black;
 	margin: 0;
 	padding: 0;
+	font-family: 'DMSSans', sans-serif; font-size: 20px
 }
 
 header {
@@ -34,17 +41,17 @@ section {
 	align-items: center;
 	align-content: center;
 }
-	  
-article {		
+
+article {
 	text-align: center;
 	/* width: 30%;  */
-    padding: 10px; 
-    margin: 10px; 
-    background-color: #333;	
+	padding: 10px;
+	margin: 10px;
+	background-color: #333;
 	transition: transform 0.3s;
 	/* margin-left: 5%;  */
 	color: white;
-	font-family: Verdana;
+	font-family: 'DMSSans', sans-serif;
 	font-size: 15px;
 }
 

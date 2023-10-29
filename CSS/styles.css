@@ -1,3 +1,9 @@
+/*Importo fuente de google fonts que tenemos en un archivo .ttf dentro de nuestro proyecto*/
+@font-face {
+	font-family: 'Agbalumo'; /* Un nombre descriptivo para tu fuente */
+	src: url('../Fonts/Agbalumo-Regular.ttf') format('truetype'); /* Ruta a tu archivo .ttf */
+}
+
 /*Estilos generales de la página*/ 
 body {
 	font-family: Arial, sans-serif;
@@ -168,7 +174,7 @@ footer {
     cursor: pointer;
 }
 /*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
-	
+
 section {
 	display: flex;
 	flex-direction: column;
@@ -176,21 +182,21 @@ section {
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
-	background-color: red;		
+	background-color: red;
 	background-color: #424949;
+	font-family: 'Agbalumo', sans-serif;
 }
-	  
-article {		
+
+article {
 	text-align: center;
 	width: 90%;
-    padding: 10px;
-    margin: 10px;
-    background-color: #333;	
+	padding: 10px;
+	margin: 10px;
+	background-color: #333;
 	transition: transform 0.3s;
 	/*margin-left: 5%;*/
 	color: white;
-	font-family: Verdana;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 @media (min-width: 769px) {
@@ -228,4 +234,5 @@ a:hover {
 
 .button-enviar:hover {
 	background-color: #641E16; /* Cambio de color al pasar el mouse por encima */
-}	  
+}
+

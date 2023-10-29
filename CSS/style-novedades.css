@@ -1,3 +1,9 @@
+/*Importo fuente de google fonts que tenemos en un archivo .ttf dentro de nuestro proyecto*/
+@font-face {
+    font-family: 'DMSSans';
+    src: url('../Fonts/DMSans-Italic.ttf') format('truetype');
+}
+
 header {
   height: 500px;
   background-image: url(https://media.vandal.net/m/10-2020/20201011726244_1.jpg);
