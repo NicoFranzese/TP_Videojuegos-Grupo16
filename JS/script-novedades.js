@@ -1,3 +1,4 @@
+//Funciones para movernos entre páginas
 function irAInicio() {
     window.location.href = "index.html";
 }

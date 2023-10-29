@@ -1,3 +1,4 @@
+//Funciones para movernos entre páginas 
 function irAInicio() {
 	window.location.href = "index.html";
 }
@@ -10,6 +11,7 @@ function irASobreProducto() {
 	window.location.href = "Sobre_Producto.html";
 }
 
+//Funciones para ir a los Git Hub
 function irAGitNico() {
 	window.open("https://github.com/NicoFranzese", "_blank");
 

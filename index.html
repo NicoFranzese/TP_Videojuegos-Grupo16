@@ -7,47 +7,38 @@
 
 	<!-- Enlazar el archivo CSS externo en el head -->
 	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<!-- Colocar Favicon -->
 	<link rel="icon" type="image/x-icon" href="Imagenes/favicon.png">
 
 </head>
 <body style="background-color: #424949">
 
+	<!--Boton flotante que abre formulario de contacto-->
 	<a class="open-popup-button" onclick="openPopup()">Contacto <object data="imagenes/envelope-solid.svg" width="20" height="20"> </object></a>
-	<!-- <div class="boton-flotante"> -->
-	<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
-	<!-- </div> -->
 
 	<header>
 		<h1>Grupo 16 - Los Sin Nombre</h1>
-
-		<!-- Barra de menú -->
-		<!-- <nav> -->
-		<!-- <a class="open-popup-button" onclick="openPopup()">Contacto</a> -->
-		<!-- </nav> -->
 	</header>
 
 	<section>
 		<article>
 			<a href="Sobre_Producto.html">
 				<h2>Sobre nuestro Producto</h2>
-				<!-- <a href="novedades.html"><p>Ingresa para saber más a fondo de qué se trata nuestra página.</p></a> -->
-				<p>Ingresa para saber más a fondo de qué se trata nuestra página.</p>
+				<p>Ingrese aquí para saber más a fondo de qué se trata nuestra página.</p>
 			</a>
 		</article>
 
 		<article>
 			<a href="novedades.html">
 				<h2>Novedades</h2>
-
-				<p>Acá encontrarás las últimas novedades en videos Juegos.</p>
+				<p>Aquí encontrarás las últimas novedades en videos Juegos.</p>
 			</a>
 		</article>
 
 		<article>
 			<a href="Quienes_Somos.html">
-				<h2>Quienes Somos?</h2>
-
-				<p>Ingresá para ver nuestro equipo</p>
+				<h2>¿Quienes Somos?</h2>
+				<p>Ingrese para ver nuestro equipo.</p>
 			</a>
 		</article>
 	</section>
@@ -57,17 +48,7 @@
 	<div class="overlay" id="overlay"></div>
 	<div class="popup" id="popup">
 		<button class="close-popup-button" onclick="closePopup()">X</button>
-		<h2>Formulario de Contacto</h2>
-		<!--<form action="#" method="post">
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" required><br><br>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required><br><br>
-			<label for="mensaje">Mensaje:</label><br>
-			<textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-			<input type="submit" value="Enviar">
-		</form>-->
-
+		<h2>Formulario de Contacto</h2>		
 		<form id="miFormulario" action="https://formspree.io/f/mleyayon" method="POST">
 			<label>
 				Nombre:
@@ -82,7 +63,6 @@
 				Mensaje:
 				<textarea id="mensaje" name="mensaje"></textarea>
 			</label>
-			<!-- your other form fields go here -->
 			<button class="button-enviar" type="submit">Enviar</button>
 		</form>
 
@@ -92,6 +72,7 @@
 		<p>Derechos de autor © 2023 - Grupo 16 - Los Sin Nombre</p>
 	</footer>
 
+	<!--Importo Js que contiene funcionalidades y validaciones-->
 	<script src="JS/script-index.js"></script>
 </body>
 </html>

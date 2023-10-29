@@ -1,3 +1,4 @@
+//*************Variables y funciones para SLider**************+
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
@@ -29,18 +30,15 @@ function showSlide(index) {
     } else if (index == -2) {
         index = 1;
     }
-    //const slideWidth = 100 / slides.length;
     const slideWidth = 300;
     const translateX = -index * slideWidth;
     slides.forEach((slide, i) => {
-        //slide.style.transform = `translateX(${translateX}%)`;
         slide.style.transform = `translateX(${translateX}px)`;
     });
 }
 
 prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1) % slides.length;
-    //currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     showSlide(currentIndex);
 });
 
@@ -51,6 +49,9 @@ nextButton.addEventListener('click', () => {
 
 showSlide(currentIndex);
 
+//*************FIN Variables y funciones para SLider**************+
+
+//Funciones para movernos entre páginas
 function irAInicio() {
     window.location.href = "index.html";
 }
